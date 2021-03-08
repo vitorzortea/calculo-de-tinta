@@ -1,27 +1,25 @@
-# DigiPaint
+# DigiPaint - DIGITAL REPUBLIC CODE CHALLENGE
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+| Página Inicial | Página de Resultado |
+|---|---|
+|  ![](https://uploaddeimagens.com.br/images/003/120/785/full/1.jpg?1615244304) |  ![](https://uploaddeimagens.com.br/images/003/120/786/full/2.jpg?1615244338) |
 
-## Development server
+Esse projeto foi desenvolvido com o Angular na versão 11.0.7.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para rodar esse projeto use o código `ng serve`  no diretorio raiz. No Navegador estará apto na url  `http://localhost:4200/`. Caso alterado o código, o app será atualizado automaticamente.
 
-## Code scaffolding
+## Objetivo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [X] **Nenhuma parede pode ter menos de 1 metro nem mais de 15 metros**
+- [X] **O total de área das portas e janelas deve ser no máximo 50% da área de parede**
+- [X] **A altura da parede deve ser, no mínimo, 30 centímetros maior que a altura da porta.**
+- [X] **Cada janela possui as medidas: 2,00m x 1,20m**
+- [X] **Cada porta possui as medidas: 0,80m x 1,90m**
+- [X] **Cada litro de tinta é capaz de pintar 5 metros quadrados.**
+- [X] **As variações de tamanho das latas de tinta são: 0,5L | 2,5 L | 3,6 L | 18 L**
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Bonus
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [X] **Componetização**
+- [X] **Responsivo**
