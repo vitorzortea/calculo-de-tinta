@@ -1,0 +1,47 @@
+<h2 class="bg-{{index}}">Parede {{index+1}}</h2>
+<form>
+  <label>
+    <i class="fas fa-arrows-alt-v color-{{index}}"></i>
+    <input
+      [(ngModel)]="altura"
+      name="altura"
+      max="15"
+      min="1"
+      type="number"
+      placeholder="Altura em metros"
+      (change)="changeWalls()"
+    />
+  </label>
+  <label>
+    <i class="fas fa-arrows-alt-h color-{{index}}"></i>
+    <input
+      [(ngModel)]="largura"
+      name="largura"
+      max="15"
+      min="1"
+      type="number"
+      placeholder="Largura em metros"
+      (change)="changeWalls()"
+    />
+  </label>
+  <label>
+    <i class="fas fa-door-closed color-{{index}}"></i>
+    <input
+      [(ngModel)]="portas"
+      name="portas"
+      type="number"
+      placeholder="Nº de portas"
+      (change)="changeWalls()"
+    />
+  </label>
+  <label>
+    <i class="fas fa-window-frame color-{{index}}"></i>
+    <input
+      [(ngModel)]="janelas"
+      name="janelas"
+      type="number"
+      placeholder="Nº de janelas"
+      (change)="changeWalls()"
+    />
+  </label>
+</form>

@@ -1,0 +1,52 @@
+#walls
+  background-color: #ededed
+  padding-top: 20px
+  .box-form
+    width: 25%
+    position: relative
+    padding: 10px
+    &:not(:last-child):after
+      content: ''
+      width: 3px
+      height: 90%
+      border-radius: 5px
+      background-color: #a2a2a2
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translate(-50%, -50%)
+
+  button
+    display: table
+    margin: 0 auto
+    background-color: #44295e
+    padding: 5px 50px
+    font-weight: bold
+    color: white
+    text-transform: uppercase
+    border-radius: 100px
+    letter-spacing: .5px
+    font-size: 1.2em
+    transform: translate(0, 50%)
+
+#result>div
+  margin-top: 60px
+  margin-bottom: 20px
+  padding: 0 20px 20px
+  border: solid 2px #A2A2A2
+  border-radius: 20px
+  text-align: center
+
+  h2
+    display: table
+    margin: 0 auto -20px
+    font-size: 1.5em
+    padding: 5px 20px
+    background-color: white
+    transform: translate(0 ,-50%)
+
+  p span
+    display: inline-table
+    font-weight: bold
+    font-size: 1.2em
+    vertical-align: middle

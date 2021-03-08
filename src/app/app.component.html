@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+<section id="walls">
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let wall of walls; let i=index" class="box-form">
+        <app-form-wall
+        [index]="i"
+        [altura]="wall.altura"
+        [largura]="wall.largura"
+        [portas]="wall.portas"
+        [janelas]="wall.janelas"
+        (newItemEvent)="receberFilho($event, i, 'altura')"
+        ></app-form-wall>
+      </div>
+    </div>
+    <button *ngIf="condicaoSubmit()" (click)="calcularTinta()">Calcular</button>
+  </div>
+</section>
+<section id="result" class="container" *ngIf="keyResult">
+  <div>
+    <h2>Resultado:</h2>
+    <p>Para esse comodo vocÊ precisará de</p>
+    <ng-container *ngFor="let item of resultado">
+      <p><span>{{item.quantidade}} latas</span> de tinda de <span>{{item.lata}} Litros</span></p>
+    </ng-container>
+
+  </div>
+</section>
