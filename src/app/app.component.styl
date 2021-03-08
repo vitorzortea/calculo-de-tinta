@@ -1,6 +1,9 @@
 #walls
   background-color: #ededed
   padding-top: 20px
+  #info-app
+    text-align: center
+    padding: 0 10px 10px
   .box-form
     width: 25%
     position: relative
@@ -50,3 +53,18 @@
     font-weight: bold
     font-size: 1.2em
     vertical-align: middle
+
+@media screen and (max-width: 720px)
+  #walls .box-form
+    width: 50%
+
+@media screen and (max-width: 480px)
+  #walls .box-form
+    width: 100%
+    padding: 20px 10px 10px
+    &:not(:last-child):after
+      width: 100%
+      height: 2px
+      top: 100%
+      left: 0
+      transform: none
